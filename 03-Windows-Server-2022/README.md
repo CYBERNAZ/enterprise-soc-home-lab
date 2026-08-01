@@ -1,51 +1,68 @@
 # Windows Server 2022
 
-## Objective
+## Overview
 
-Deploy Windows Server 2022 as the Domain Controller for the Enterprise SOC Home Lab.
-
-This server provides centralized authentication, Active Directory services, DNS, and Group Policy management for all Windows endpoints inside the virtual enterprise network.
+Windows Server 2022 acts as the Domain Controller for the Enterprise SOC Home Lab. It provides centralized authentication, Active Directory Domain Services, DNS, and Group Policy management.
 
 ---
 
 ## VM Specifications
 
-| Component | Value |
-|-----------|------|
-| Operating System | Windows Server 2022 |
-| Hypervisor | Proxmox VE |
-| Role | Domain Controller |
-| Network | Internal Virtual Network |
-| Static IP | (Insert your IP) |
+| Resource | Value |
+|----------|-------|
+| OS | Windows Server 2022 |
+| CPU | 4 vCPU |
+| Memory | 8 GB |
+| Storage | 80 GB |
 
 ---
 
-## Roles Installed
+## Installation
 
-- Active Directory Domain Services
-- DNS Server
-- Group Policy Management
-- Remote Server Administration Tools
-
----
-
-## Configuration
-
-### Installed Windows Server 2022
-
-- Created virtual machine
-- Attached ISO
-- Installed operating system
-- Configured Administrator password
-
----
-
-### Network Configuration
+Installed Windows Server 2022.
 
 Configured:
 
-- Static IP Address
-- Default Gateway
-- Preferred DNS Server
+- Administrator password
+- Computer name
+- Static IP address
 
-Verified connectivity using:
+Installed latest Windows Updates.
+
+---
+
+## Server Roles
+
+Installed:
+
+- Active Directory Domain Services
+- DNS Server
+
+---
+
+## Verification
+
+Verified:
+
+- Server boot
+- Network connectivity
+- DNS resolution
+
+---
+
+## Lessons Learned
+
+- Windows Server deployment
+- Server management
+- AD DS installation
+- DNS configuration
+
+---
+
+## Screenshots
+
+Add:
+
+- Server Manager
+- Installed Roles
+- Static IP
